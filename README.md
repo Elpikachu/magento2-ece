@@ -28,7 +28,7 @@ There is no admin user existing, as such, you cannot login in Magento backoffice
 To create one, SSH to the app container and use the following command: `php bin/magento admin:user:create`.  
 The login will then happen on the `/admin` URL of the site.
 
-## Customizations
+## Changes
 
 The following changes have been made relative to Magento 2 as it is downloaded from Magento.com.  If using this project as a reference for your own existing project, replicate the changes below to your project.
 
