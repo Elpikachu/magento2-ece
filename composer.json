@@ -18,7 +18,8 @@
         "magento/magento-cloud-components": "^1.0",
         "magento/magento-cloud-patches": "^1.0",
         "magento/product-community-edition": "2.4.3-p1",
-        "magento/quality-patches": "^1.1"
+        "magento/quality-patches": "^1.1",
+        "markshust/magento2-module-disabletwofactorauth": "^2.0"
     },
     "autoload": {
         "exclude-from-classmap": [

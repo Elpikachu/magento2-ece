@@ -27,6 +27,12 @@ Note that you'll need to use the "server" and "Platform.sh" to get the variables
 There is no admin user existing, as such, you cannot login in Magento backoffice.
 To create one, SSH to the app container and use the following command: `php bin/magento admin:user:create`.  
 The login will then happen on the `/admin` URL of the site.
+## Disabling TFA
+In order to have an easier back office access, you can disable TFA by connecting through SSH to the app container and run:
+```
+bin/magento config:set twofactorauth/general/enable 0
+```
+
 ### Site performance
 In order to have a quick deploy time for showcases, we have put the SCD on demand, which means that the first access will be slow. Please take a moment to do some cache warming before the demo
 
