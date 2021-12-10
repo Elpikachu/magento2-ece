@@ -15,7 +15,8 @@ With the help of some additional packages, like the ece-tools, the deploy become
 The access to the Magento repo needs you to authenticate before pulling the code.
 You'll need to have a Magento account (free) in order to use this template.
 Once you have your account, create a project level variable in JSON format with your auth informations: 
-```platform variable:create -p <your Platform.sh projectID> --level project --name env:COMPOSER_AUTH --json true --visible-runtime false --sensitive true --visible-build true  --value '{"http-basic":{"repo.magento.com":{"username":"[public key]","password":"[private key]"}}}'```
+```platform variable:create -p <your Platform.sh projectID> --level project --name env:COMPOSER_AUTH --json true --visible-runtime false --sensitive true --visible-build true  --value '{"http-basic":{"repo.magento.com":{"username":"[public key]","password":"[private key]"}}}'
+```
 The first deploy will fail because the variable will not be taken into account. The only way to have it work on the first try is to includ an auth.json file with your credentials in it (highly not recommanded though).
 ### Blackfire setup
 In order to showcase blackfire during your demo, you'll need to create the associated variables.
