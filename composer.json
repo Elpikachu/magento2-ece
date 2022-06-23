@@ -8,16 +8,24 @@
     ],
     "config": {
         "preferred-install": "dist",
-        "sort-packages": true
+        "sort-packages": true,
+        "allow-plugins": {
+            "laminas/laminas-dependency-plugin": true,
+            "dealerdirect/phpcodesniffer-composer-installer": true,
+            "magento/composer-dependency-version-audit-plugin": true,
+            "magento/composer-root-update-plugin": true,
+            "magento/magento-composer-installer": true,
+            "magento/inventory-composer-installer": true
+        }
     },
-    "version": "2.4.3-p1",
+    "version": "2.4.4",
     "require": {
         "magento/composer-dependency-version-audit-plugin": "~0.1",
         "magento/composer-root-update-plugin": "~1.1",
         "magento/ece-tools": "^2002.1",
         "magento/magento-cloud-components": "^1.0",
         "magento/magento-cloud-patches": "^1.0",
-        "magento/product-community-edition": "2.4.3-p1",
+        "magento/product-community-edition": "2.4.4",
         "magento/quality-patches": "^1.1",
         "markshust/magento2-module-disabletwofactorauth": "^2.0"
     },
