@@ -21,7 +21,7 @@
     "version": "2.4.4",
     "require": {
         "magento/composer-dependency-version-audit-plugin": "~0.1",
-        "magento/composer-root-update-plugin": "~1.1",
+        "magento/composer-root-update-plugin": "~2.0",
         "magento/ece-tools": "^2002.1",
         "magento/magento-cloud-components": "^1.0",
         "magento/magento-cloud-patches": "^1.0",
