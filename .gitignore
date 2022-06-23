@@ -30,6 +30,7 @@ atlassian*
 /.grunt
 /Gruntfile.js
 /package.json
+/auth.json
 /.php_cs
 /.php_cs.cache
 /grunt-config.json
