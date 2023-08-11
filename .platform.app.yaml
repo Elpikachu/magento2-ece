@@ -16,7 +16,6 @@ runtime:
     - sodium
     - redis
     - xsl
-    - json
     - blackfire
 
 # Configuration of the build of this application.
