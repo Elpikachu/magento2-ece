@@ -18,6 +18,9 @@ runtime:
     - xsl
     - blackfire
 
+dependencies:
+    php:
+        composer/composer: "^2"
 # Configuration of the build of this application.
 build:
     flavor: composer
