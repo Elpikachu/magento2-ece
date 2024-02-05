@@ -63,6 +63,7 @@ hooks:
   deploy: |
     set -e
     php ./vendor/bin/ece-tools deploy
+    bin/magento config:set twofactorauth/general/enable 0
   post_deploy: |
     set -e
     php ./vendor/bin/ece-tools post-deploy
