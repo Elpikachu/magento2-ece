@@ -4,9 +4,9 @@ This template permits to build Magento 2 CE on PSH and showcase the build, deplo
 The application is configured to use the following services & runtimes:
 * MariaDB
 * Redis
-* Elasticsearch
+* Opensearch
 * RabbitMQ
-* PHP 7.4
+* PHP 8.1
 
 With the help of some additional packages, like the ece-tools, the deploy becomes easier and faster.
 
@@ -30,7 +30,7 @@ There is no admin user existing, as such, you cannot login in Magento backoffice
 To create one, SSH to the app container and use the following command: `php bin/magento admin:user:create`.  
 The login will then happen on the `/admin` URL of the site.
 ## Disabling TFA
-In order to have an easier back office access, you can disable TFA by connecting through SSH to the app container and run:
+In order to have an easier back office access, TFA is disabled as part of the deploy hook using the following command:
 ```
 bin/magento config:set twofactorauth/general/enable 0
 ```
